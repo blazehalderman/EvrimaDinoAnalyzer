@@ -1,0 +1,17 @@
+Dinosaur,Stat_Type,25_Percent_Juvi,50_Percent_SubJuvi,75_Percent_SubAdult,100_Percent_Adult,Prime_Elder_125_Percent,Frail_Elder_80_Percent
+Tyrannosaurus,Mass_kg,2350,4700,7050,9400,11750,7520
+Triceratops,Mass_kg,2375,4750,7125,9500,11875,7600
+Deinosuchus,Mass_kg,2000,4000,6000,8000,10000,6400
+Stegosaurus,Mass_kg,1500,3000,4500,6000,7500,4800
+Maiasaura,Mass_kg,950,1900,2850,3800,4750,3040
+Diabloceratops,Mass_kg,812,1625,2437,3250,4062,2600
+Allosaurus,Mass_kg,700,1400,2100,2800,3500,2240
+Ceratosaurus,Mass_kg,562,1125,1687,2250,2812,1800
+Tenontosaurus,Mass_kg,437,875,1312,1750,2187,1400
+Carnotaurus,Mass_kg,325,650,975,1300,1625,1040
+Pachycephalosaurus,Mass_kg,325,650,975,1300,1625,1040
+Dilophosaurus,Mass_kg,300,600,900,1200,1500,960
+Gallimimus,Mass_kg,250,500,750,1000,1250,800
+Omniraptor,Mass_kg,112,225,337,450,562,360
+Herrerasaurus,Mass_kg,43,87,131,175,218,140
+Troodon,Mass_kg,15,30,45,60,75,48

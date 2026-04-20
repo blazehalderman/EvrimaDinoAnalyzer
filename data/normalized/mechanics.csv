@@ -1,0 +1,57 @@
+Dinosaur,Mechanic_Name,Type,Effect,Trigger_Threshold,Gameplay_Impact,Special_Damage_N
+Tyrannosaurus,Bone Crush,Special Ability,100% Fracture (Bone Break),Knockdown Target < 0.75x Rex Mass,"Miss self-stun 1.0s, 5.0s Cooldown",0.0
+Triceratops,Gore / Trample,Special Ability,25+ Bleed/sec,100% Lethal Trample to Target < 500kg,High Stamina Drain,0.0
+Deinosuchus,Aquatic Lunge,Special Ability,Drowning / Massive Bleed,Grab Target < 4000kg (Half Deino Mass),Target stamina dictates time to drown,500.0
+Stegosaurus,Directional Tail Swing,Special Ability,30 Bleed/tick,Headshot modifier x2.6 (3120 N),Limited rear FOV tracking,1200.0
+Maiasaura,Stance Switch / Stomp,Special Ability,Instant Speed/Agility toggle,,,110.0
+Diabloceratops,Horn Spar,Special Ability,Opponent Stamina set to 0% if won,Dynamic vs mass ratio,Loser Stamina drops to 0%,275.0
+Allosaurus,Grapple / Pin,Special Ability,50 Dmg/sec + 50 Bleed/sec,Pin Target < 1400kg (Half Allo Mass),Extreme Stamina Drain while latched,0.0
+Ceratosaurus,Bacteria Bite,Special Ability,40% Rot per bite (Fully Charged),100% Rot forces vomit stun (2-3s),Movement slowed by 10% while charging,350.0
+Tenontosaurus,Rear Kick / Slam,Special Ability,Massive Blunt Trauma / Grounding,Slam AoE Grounding for targets < 500kg,Directional requirement (Kick strictly rear),350.0
+Carnotaurus,High-Speed Charge,Special Ability,Knockdown / Stun,Target < 1300kg (Knockdown),"Speed must be > 49.5 kmh, high stamina drain",300.0
+Pachycephalosaurus,Dome Charge,Special Ability,100% Fracture (Bone Break),Target Stamina Regen penalised 50%,Miss leaves Pachy vulnerable to counter-attack,350.0
+Dilophosaurus,Venom Spit,Special Ability,Stage 3 DoT / Hallucinations,Continuous HP drain until target rests,Spit impact damage is strictly 0,0.0
+Gallimimus,Dropkick / Vocals,Special Ability,Stamina & Speed Buff (Herd),Collision heavy vs < 200kg,Requires momentum,150.0
+Omniraptor,Pounce / Pin,Special Ability,32.5 dmg/tick or Heavy Bleed Stacking,Pin occurs at Target 0 Stamina,Omniraptor Stamina Drain constant while latched,32.5
+Herrerasaurus,Drop Attack,Special Ability,Fall Height Exponential Damage,Terminal velocity 1-shots up to 1500kg targets,Missing target at height results in self-death,0.0
+Dryosaurus,Dodge Roll,Special Ability,Invincibility Frames (0.5s - 1.0s),Consumes flat 15% Max Stamina per roll,Cannot attack during animation,0.0
+Troodon,Venom Pounce,Special Ability,Stage 3 Extreme Percentage DoT,Requires coordinated pack vocalization,Base stats too low for raw combat,15.0
+Hypsilophodon,Acid Spit,Special Ability,100% Blindness (10s),Must strike Head Hitbox (2.6x zone),Impact damage is strictly 0,0.0
+Ceratosaurus,Bacterial Bite,Active Ability,Target vomits (2-3s stun); vomiting cancels all attacks and sprinting,Eating builds up bacteria; fully-charged bite,Offensive pressure tool; forces target vulnerability window,
+Ceratosaurus,Bleed Resistance,Passive,Naturally bleed resistant; resistance decreases as HP falls,Always active; scales inversely with HP,High HP = strong bleed resistance; low HP = normal bleed susceptibility,
+Ceratosaurus,Aquatic Alt-Bite,Passive Unlock,Only terrestrial dino that can use alt-bite while swimming,In water,Unique combat advantage in aquatic environments,
+Allosaurus,Pounce / Grapple,Active Ability,Grapple deals bleed and 50 damage/s per Allo; pins targets below pin weight threshold,Alt + LMB directional attack,Primary offensive mechanic; stacks with pack; extreme stamina drain while latched,
+Allosaurus,Prime Elder,Lifecycle Stage,Weight 2600→3700 kg; Biteforce 175→200→140; Speed 38.9→39.2→35.6 km/h at old 100%,Reaches elder age (~87% growth peak),Stats increase then decline as Elder ages; peak performance at ~87%,
+Deinosuchus,Lunge,Active Ability,350 damage; grabs and drowns target; stamina cost 5% water / 15% land,Hold RMB near target up to 4000 kg,Primary ambush tool from water,
+Deinosuchus,Watersense,Active Ability,Detects surface movement on water,Hold Q,Reveals prey on water surface,
+Deinosuchus,Diving,Unique Mechanic,Fast 30.6 km/h slow 11.4 km/h; oxygen 10 min,Hold Ctrl to dive / Space to ascend,Full underwater ambush positioning,
+Triceratops,Primary Attack,Active Ability,600 damage; same damage applies when running,LMB,Standard attack,
+Triceratops,Flip,Active Ability,750 damage (600 w/ knockdown); stuns targets up to 1.5x Trike weight; knocks down targets up to 0.9x Trike weight,Hold LMB,Primary offensive special; weight-gated stun and knockdown,
+Triceratops,Sparring,Unique Mechanic,10 push attacks each with 30s cooldown; cooldown resets after attacking,Alt attack mode,Intraspecies combat,
+Diabloceratops,Sprint Attack,Active Ability,150 damage + knockdown,Sprinting + LMB,Knockdown enables follow-up attacks,
+Diabloceratops,Sparring,Unique Mechanic,10 push attacks each with 30s cooldown; cooldown resets after attacking,Alt attack mode,Intraspecies combat,
+Pteranodon,Flight,Unique Mechanic,Primary locomotion at 108 km/h; only flying dino currently in dataset,Always active (airborne),Bypasses all ground-based threats; stamina 1:05 min duration,
+Pteranodon,Take Off,Unique Mechanic,Must build up ground speed before becoming airborne,Running start required,Cannot take off from standstill; vulnerable on ground,
+Pteranodon,Airbrake,Active Ability,Rapidly reduces airspeed to allow controlled landing or direction change,Activated mid-flight,Essential for landing without overshooting; combat repositioning,
+Pteranodon,Latching,Active Ability,Can latch onto trees and vertical surfaces; hangs stationary,Approach surface while flying,Ambush perch; passive rest position to conserve stamina,
+Pteranodon,Skimming,Unique Mechanic,Snatches fish from water while flying; primary feeding method,Fly low over water surface,Eating without landing; safer foraging than ground feeding,
+Troodon,Pounce,Active Ability,35 base damage; applies venom on target; stages 1/2/3 deal 35/50/75 venom damage,Alt attack,Primary offensive tool; venom stacks with successive pounces; envenomated targets take significantly more hits to kill,
+Troodon,Venom,Passive,"3 stages: Stage 1 = 35 dmg, Stage 2 = 50 dmg, Stage 3 = 75 dmg",Applied via Pounce,Reduces effective HTK dramatically at higher stages; Hypsilophodon and Beipiaosaurus die before reaching full envenomation,
+Troodon,Primary Bite,Active Ability,15 damage,LMB,Low damage; pounce is primary DPS tool,
+Troodon,Directional Attack,Active Ability,18 damage,Directional + LMB,Slightly higher than primary bite,
+Tyrannosaurus,Crush,Active Ability,Missing prevents Rex from moving for 1s. 5s cooldown,,,
+Tyrannosaurus,Fractures,Unique Mechanic,"Fractures can combine, combining defects",,,
+Omniraptor,Standard Attack,Active Ability,Deals damage,,,
+Carnotaurus,Standard Attack,Active Ability,Deals damage,,,
+Herrerasaurus,Standard Attack,Active Ability,Deals damage,,,
+Tenontosaurus,Standard Attack,Active Ability,Deals damage,,,
+Beipiaosaurus,Standard Attack,Active Ability,Deals damage,,,
+Maiasaura,Standard Attack,Active Ability,Deals damage,,,
+Dilophosaurus,Standard Attack,Active Ability,Deals damage,,,
+Hypsilophodon,Standard Attack,Active Ability,Deals damage,,,
+Stegosaurus,Standard Attack,Active Ability,Deals damage,,,
+Pachycephalosaurus,Standard Attack,Active Ability,Deals damage,,,
+Gallimimus,Standard Attack,Active Ability,Deals damage,,,
+Beipiaosaurus,Claw Swipe,Active Ability,Fast attacks inflicting bleed,LMB,High DPS on stationary targets,
+Beipiaosaurus,Amphibious,Passive,Excellent aquatic speed and oxygen length,In water,Can escape terrestrial predators easily,
+Herrerasaurus,Tree Climbing,Passive Unlock,Can scale vertical surfaces,Spacebar near tree,Ultimate ambush and escape tool,

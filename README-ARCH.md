@@ -190,13 +190,13 @@ Features to be defined by Gemini Conductor agents once all 3 datasets are collec
 
 | Phase | Goal | Status |
 |---|---|---|
-| **Phase 0** | Project structure, architecture definition | ✅ In Progress |
-| **Phase 1** | ETL — Source 2 scraper (Quick Guide) | ⏳ Pending |
-| **Phase 2** | ETL — Source 3 transcript extractor (Doqi) | ⏳ Pending |
-| **Phase 3** | Normalize + merge all 3 sources | ⏳ Pending |
-| **Phase 4** | MVP analysis engine + FastAPI backend | ⏳ Pending |
-| **Phase 5** | MVP frontend UI | ⏳ Pending |
-| **Phase 6** | Feature expansion (guided by data + Conductor) | ⏳ Pending |
+| **Phase 0** | Project structure, architecture definition | ✅ Complete |
+| **Phase 1** | ETL — Source 2 scraper (Quick Guide) | 🗑️ Scrapped |
+| **Phase 2** | ETL — Source 3 transcript extractor (Doqi) | ✅ Complete |
+| **Phase 3** | Normalize + merge all 3 sources | ✅ Complete |
+| **Phase 4** | MVP analysis engine + FastAPI backend | ✅ Complete |
+| **Phase 5** | MVP frontend UI | ✅ Complete |
+| **Phase 6** | Feature expansion (guided by data + Conductor) | ⏳ In Progress |
 
 ---
 

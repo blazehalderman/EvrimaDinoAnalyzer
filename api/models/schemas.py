@@ -1,46 +1,34 @@
-# api/models/schemas.py
-# Pydantic input/output schemas for all API endpoints.
+﻿from pydantic import BaseModel
 
-from pydantic import BaseModel, Field
-
-
-class MatchupRequest(BaseModel):
-    species: str = Field(..., description="Dinosaur species name (e.g. 'Carnotaurus')")
-    growth_pct: float = Field(..., ge=1.0, le=100.0, description="Current growth percentage (1–100)")
-    is_prime: bool = Field(False, description="Apply Prime specimen stat bonus (+25%)")
-
-
-class OpponentResult(BaseModel):
-    opponent: str
-    opponent_growth_pct: float
-    attacker_hits_to_kill: float
-    defender_hits_to_kill: float
-    verdict: str  # "Engage" | "Caution" | "Flee"
-
-
-class MatchupResponse(BaseModel):
+class AnalyzeRequest(BaseModel):
     species: str
-    growth_pct: float
-    is_prime: bool
-    interpolated_stats: dict
-    matchups: list[OpponentResult]
+    growth_pct: float = 100.0
+    is_prime: bool = False
 
+class MatchupResult(BaseModel):
+    opponent: str
+    hits_to_kill_them_body: float
+    hits_to_kill_them_head: float
+    hits_for_them_to_kill_you_body: float
+    hits_for_them_to_kill_you_head: float
+    verdict: str  # Engage, Caution, Flee
+    speed_advantage: str
+    opponent_mechanics: list[dict] = []
+    opponent_diet: str = "Unknown"
+    attacker_sprint_kmh: float = 0.0
+    defender_sprint_kmh: float = 0.0
 
-class DinoSummary(BaseModel):
-    name: str
-    diet: str
-    max_mass_kg: float
-    max_hp: float
-    base_damage: float
-
-
-class DinoDetail(DinoSummary):
-    sprint_speed_kmh: float
-    ambush_speed_kmh: float
-    grow_time_hrs: float
-    special_abilities: list[str]
-
+class AnalyzeResponse(BaseModel):
+    provided_species: str
+    stats_used: dict
+    matchups: list[MatchupResult]
+    attacker_mechanics: list[dict] = []
 
 class GuideResponse(BaseModel):
     species: str
-    growth_profiles: list[dict]
+    diet: str
+    nest_type: str = "Unknown"
+    max_eggs: int = 0
+    can_eat_bones: str = "No"
+    vomits_from_overeating: str = "No"
+    playstyle_tips: list[str] = []

@@ -1,0 +1,4 @@
+Hitbox_Zone,Damage_Multiplier,Effect_Description
+Head,2.6,Extreme Critical Damage
+Body,1.0,Standard Base Damage
+Tail,0.13,Negligible Damage (87% Damage Reduction)

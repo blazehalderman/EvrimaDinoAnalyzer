@@ -23,3 +23,17 @@ Troodon,Primary Bite,Active Ability,LMB,15 damage,Low damage; pounce is primary 
 Troodon,Directional Attack,Active Ability,Directional + LMB,18 damage,Slightly higher than primary bite
 Tyrannosaurus,Crush,Active Ability,,Missing prevents Rex from moving for 1s. 5s cooldown,
 Tyrannosaurus,Fractures,Unique Mechanic,,"Fractures can combine, combining defects",
+Omniraptor,Standard Attack,Active Ability,,Deals damage,
+Carnotaurus,Standard Attack,Active Ability,,Deals damage,
+Herrerasaurus,Standard Attack,Active Ability,,Deals damage,
+Tenontosaurus,Standard Attack,Active Ability,,Deals damage,
+Beipiaosaurus,Standard Attack,Active Ability,,Deals damage,
+Maiasaura,Standard Attack,Active Ability,,Deals damage,
+Dilophosaurus,Standard Attack,Active Ability,,Deals damage,
+Hypsilophodon,Standard Attack,Active Ability,,Deals damage,
+Stegosaurus,Standard Attack,Active Ability,,Deals damage,
+Pachycephalosaurus,Standard Attack,Active Ability,,Deals damage,
+Gallimimus,Standard Attack,Active Ability,,Deals damage,
+Beipiaosaurus,Claw Swipe,Active Ability,LMB,Fast attacks inflicting bleed,High DPS on stationary targets
+Beipiaosaurus,Amphibious,Passive,In water,Excellent aquatic speed and oxygen length,Can escape terrestrial predators easily
+Herrerasaurus,Tree Climbing,Passive Unlock,Spacebar near tree,Can scale vertical surfaces,Ultimate ambush and escape tool

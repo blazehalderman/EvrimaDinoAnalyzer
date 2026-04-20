@@ -1,0 +1,17 @@
+Dinosaur,Stat_Type,25_Percent_Juvi,50_Percent_SubJuvi,75_Percent_SubAdult,100_Percent_Adult,Prime_Elder_125_Percent,Frail_Elder_80_Percent
+Tyrannosaurus,Damage_N,122,245,367,490,612,392
+Triceratops,Damage_N,150,300,450,600,750,480
+Deinosuchus,Damage_N,125,250,375,500,625,400
+Stegosaurus,Damage_N,300,600,900,1200,1500,960
+Maiasaura,Damage_N,27,55,82,110,137,88
+Diabloceratops,Damage_N,68,137,206,275,343,220
+Allosaurus,Damage_N,75,150,225,300,375,240
+Ceratosaurus,Damage_N,37,75,112,150,187,120
+Tenontosaurus,Damage_N,30,60,90,120,150,96
+Carnotaurus,Damage_N,50,100,150,200,250,160
+Pachycephalosaurus,Damage_N,87,175,262,350,437,280
+Dilophosaurus,Damage_N,37,75,112,150,187,120
+Gallimimus,Damage_N,37,75,112,150,187,120
+Omniraptor,Damage_N,16,32,48,65,81,52
+Herrerasaurus,Damage_N,7,15,22,30,37,24
+Troodon,Damage_N,3,7,11,15,18,12
