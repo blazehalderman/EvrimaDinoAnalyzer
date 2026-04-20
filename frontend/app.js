@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const species = speciesSelect.value;
         const growth_pct = parseFloat(document.getElementById('growth').value) || 100;
         const is_prime = document.getElementById('prime').checked;
+        const pack_size = parseInt(document.getElementById('pack_size').value, 10) || 1;
         const dietFilter = document.getElementById('diet-filter').value;
 
         analyzeBtn.textContent = "Analyzing...";
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const res = await fetch(`${API_BASE}/analyze`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ species, growth_pct, is_prime })
+                body: JSON.stringify({ species, growth_pct, is_prime, pack_size })
             });
 
             if (!res.ok) throw new Error('Failed to analyze matchup');
@@ -66,8 +67,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             // Display exactly what stats the backend mathematically applied
             const s = data.stats_used;
-            statsUsedEl.innerHTML = `Interpolated Attacker Stats: <strong>${s.calc_mass_kg.toFixed(1)}kg</strong> Mass | <strong>${s.calc_bite_N.toFixed(1)}N</strong> Bite Force | <strong>${s.calc_sprint_kmh.toFixed(1)}km/h</strong> Sprint<br><em>(Growth Applied: ${s.growth_applied}%, Prime: ${s.is_prime})</em>`;
+            const packText = s.pack_size > 1 ? `, Pack Size: ${s.pack_size}` : '';
+            statsUsedEl.innerHTML = `Interpolated Attacker Stats: <strong>${s.calc_mass_kg.toFixed(1)}kg</strong> Mass | <strong>${s.calc_bite_N.toFixed(1)}N</strong> Bite Force | <strong>${s.calc_sprint_kmh.toFixed(1)}km/h</strong> Sprint<br><em>(Growth Applied: ${s.growth_applied}%, Prime: ${s.is_prime}${packText})</em>`;
             statsUsedEl.style.color = '#888';
+            
+            const hitsForThemHeader = document.getElementById('hits-to-kill-you-header');
+            if (hitsForThemHeader) {
+                hitsForThemHeader.innerHTML = s.pack_size > 1 ? `Hits For Them To Kill Pack <br>(Body | <span style="color:#ffb74d">Head</span>)` : `Hits For Them To Kill You <br>(Body | <span style="color:#ffb74d">Head</span>)`;
+            }
             
             const attackerMechs = (data.attacker_mechanics || []).map(mech => mech.Mechanic_Name || mech.Ability_Name).filter(Boolean);
             const attackerMechsEl = document.getElementById('attacker-mechanics');

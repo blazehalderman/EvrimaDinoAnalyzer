@@ -23,6 +23,10 @@
                 <input type="checkbox" id="prime">
             </div>
             <div class="form-group">
+                <label for="pack_size">Pack Size:</label>
+                <input type="number" id="pack_size" min="1" max="100" value="1">
+            </div>
+            <div class="form-group">
                 <label for="diet-filter">Opponent Diet:</label>
                 <select id="diet-filter">
                     <option value="All">All</option>
@@ -47,7 +51,7 @@
                         <th>Diet</th>
                         <th>Abilities/Mechanics</th>
                         <th>Hits to Kill Them <br>(Body | <span style="color:#ffb74d">Head</span>)</th>
-                        <th>Hits For Them To Kill You <br>(Body | <span style="color:#ffb74d">Head</span>)</th>
+                        <th id="hits-to-kill-you-header">Hits For Them To Kill You <br>(Body | <span style="color:#ffb74d">Head</span>)</th>
                         <th>Chase/Escape Potential</th>
                         <th>Verdict</th>
                     </tr>

@@ -4,6 +4,7 @@ class AnalyzeRequest(BaseModel):
     species: str
     growth_pct: float = 100.0
     is_prime: bool = False
+    pack_size: int = 1
 
 class MatchupResult(BaseModel):
     opponent: str

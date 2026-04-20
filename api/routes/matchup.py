@@ -30,7 +30,7 @@ def analyze_matchup(req: AnalyzeRequest):
     )
     
     # 3. Calculate Matchups vs everyone
-    results = calculate_matchups(scaled_attacker, all_dinos, getattr(db, 'htk_table', None), getattr(db, 'hitboxes', None))
+    results = calculate_matchups(scaled_attacker, all_dinos, getattr(db, 'htk_table', None), getattr(db, 'hitboxes', None), req.pack_size)
     
     return {
         "provided_species": req.species,
@@ -39,7 +39,8 @@ def analyze_matchup(req: AnalyzeRequest):
             "calc_bite_N": float(scaled_attacker.get("Bite_Force_N", 0) or 0),
             "calc_sprint_kmh": float(scaled_attacker.get("Sprint_kmh", 0) or 0),
             "growth_applied": 125.0 if req.is_prime else max(0.0, min(100.0, req.growth_pct)),
-            "is_prime": req.is_prime
+            "is_prime": req.is_prime,
+            "pack_size": req.pack_size
         },
         "matchups": results,
         "attacker_mechanics": attacker.get("mechanics", [])

@@ -35,13 +35,16 @@ M_SCORES = {
     "Standard Attack": 1.0, "Primary Attack": 1.0, "Primary Bite": 1.0
 }
 
-def calculate_matchups(attacker_data: Dict[str, Any], all_dinos: List[Dict[str, Any]], htk_table: Optional[pd.DataFrame] = None, hitbox_table: Optional[pd.DataFrame] = None) -> List[Dict[str, Any]]:
+def calculate_matchups(attacker_data: Dict[str, Any], all_dinos: List[Dict[str, Any]], htk_table: Optional[pd.DataFrame] = None, hitbox_table: Optional[pd.DataFrame] = None, pack_size: int = 1) -> List[Dict[str, Any]]:
     """
     Calculates matchup viability for an attacker against all other dinos.
     Rule from agents/analysis_agent.md:
     Engage: attacker kills defender in fewer hits than defender kills attacker
     Caution: roughly equal hits required
     Flee: defender kills attacker in fewer hits
+    
+    pack_size scales the hits needed for the defender to wipe the attacking pack,
+    and proportionally speeds up the "Hits To Kill Them" via group DPS.
     """
     attacker_name = attacker_data.get("Dinosaur")
     attacker_mass = float(attacker_data.get("Max_Mass_kg", 0) or 0)
@@ -107,25 +110,25 @@ def calculate_matchups(attacker_data: Dict[str, Any], all_dinos: List[Dict[str, 
         
         # Body hits base (minimum 1.0 hit)
         if yt_attacker_body is not None:
-            hits_to_kill_defender_body = max(1.0, yt_attacker_body)
+            hits_to_kill_defender_body = max(1.0, yt_attacker_body / pack_size)
         else:
-            hits_to_kill_defender_body = max(1.0, defender_mass / actual_attacker_dmg_body)
+            hits_to_kill_defender_body = max(1.0, defender_mass / (actual_attacker_dmg_body * pack_size))
             
         if yt_defender_body is not None:
-            hits_to_kill_attacker_body = max(1.0, yt_defender_body)
+            hits_to_kill_attacker_body = max(1.0, yt_defender_body) * pack_size
         else:
-            hits_to_kill_attacker_body = max(1.0, attacker_mass / actual_defender_dmg_body)
+            hits_to_kill_attacker_body = max(1.0, attacker_mass / actual_defender_dmg_body) * pack_size
         
         # Head hits (minimum 1.0 hit)
         if yt_attacker_head is not None:
-            hits_to_kill_defender_head = max(1.0, yt_attacker_head)
+            hits_to_kill_defender_head = max(1.0, yt_attacker_head / pack_size)
         else:
-            hits_to_kill_defender_head = max(1.0, defender_mass / (actual_attacker_dmg_body * head_mult))
+            hits_to_kill_defender_head = max(1.0, defender_mass / (actual_attacker_dmg_body * head_mult * pack_size))
             
         if yt_defender_head is not None:
-            hits_to_kill_attacker_head = max(1.0, yt_defender_head)
+            hits_to_kill_attacker_head = max(1.0, yt_defender_head) * pack_size
         else:
-            hits_to_kill_attacker_head = max(1.0, attacker_mass / (actual_defender_dmg_body * head_mult))
+            hits_to_kill_attacker_head = max(1.0, attacker_mass / (actual_defender_dmg_body * head_mult)) * pack_size
         
         # Verdict is based strictly on standard body hits for reliability:
         base_ratio = hits_to_kill_defender_body / hits_to_kill_attacker_body
