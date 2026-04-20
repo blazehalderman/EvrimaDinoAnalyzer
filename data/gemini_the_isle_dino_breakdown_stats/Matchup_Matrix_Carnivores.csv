@@ -1,0 +1,8 @@
+Attacker_Species,vs_Tyrannosaurus_9400kg,vs_Deinosuchus_8000kg_Land,vs_Allosaurus_2800kg,vs_Ceratosaurus_2250kg,vs_Carnotaurus_1300kg,vs_Dilophosaurus_1200kg,vs_Omniraptor_450kg
+Tyrannosaurus,1v1,1v1,1 (If caught),1,1,1,1
+Allosaurus,4-5,4-5,1v1,1v1 (Allo Favored),1v1 (Allo Favored),1,1 (Insta-Pin)
+Ceratosaurus,Run,Run,2,1v1,1v1 (Cera Favored),1,1
+Carnotaurus,Run,Run,2-3,1v1 (Cera Favored),1v1,1,1
+Dilophosaurus,6+,6+,3-4,2-3,2,1v1,1v1 (Dilo Favored)
+Omniraptor,8+,8+,4-5,3-4,2-3,2,1v1
+Troodon,Run,Run,6+,5+,4,3-4,2-3

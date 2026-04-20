@@ -1,0 +1,9 @@
+Dinosaur,Weight_kg,Bite_Force_N,Sprint_kmh,Trot_kmh,Hunger_min,Thirst_min,Growth_hrs,Weight_Note
+Ceratosaurus,1300,150,42.2,17.8,60,60,4.167,May be sub-adult specimen; verify at 100% growth
+Allosaurus,2593,175,38.9,18.0,60,60,4.0,Growth time (100%-200% boost): 2h-1:20
+Deinosuchus,8000,500,18.0,7.1,90,10,11.667,Diving fast 30.6 km/h slow 11.4 km/h; oxygen 10 min
+Triceratops,9500,600,23.4,,90,60,24,Growth with 100%-200% boost: 12h-8h
+Diabloceratops,3000,275,36,16.2,80,60,7.0,Growth with perfect diet: 3:30h; pack limit 6
+Pteranodon,45,20,28.4,,50,35,2.833,Ground sprint only; fly speed 108 km/h; growth with perfect diet: 1:25h
+Troodon,60,15,45,18.9,60,,,120 HP shown in stats frame
+Tyrannosaurus,9350,700,29,,120,120,20.0,

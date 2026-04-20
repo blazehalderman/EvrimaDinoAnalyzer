@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EvrimaDinoAnalyzer — Combat Viability Analyzer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>EvrimaDinoAnalyzer</h1>
+    <p class="subtitle">The Isle: Evrima — Combat Viability Analyzer</p>
+  </header>
+
+  <main>
+    <section id="input-panel">
+      <h2>Your Dinosaur</h2>
+      <form id="analyzer-form">
+        <label for="species">Species</label>
+        <select id="species" name="species" required>
+          <option value="">— select —</option>
+          <!-- Populated dynamically from GET /dinos -->
+        </select>
+
+        <label for="growth">Growth %</label>
+        <input id="growth" name="growth_pct" type="number" min="1" max="100" value="100" required />
+
+        <label class="checkbox-label">
+          <input id="prime" name="is_prime" type="checkbox" />
+          Prime specimen
+        </label>
+
+        <button type="submit">Analyze</button>
+      </form>
+    </section>
+
+    <section id="results-panel" hidden>
+      <h2>Matchup Results</h2>
+      <div id="stats-summary"></div>
+      <table id="matchup-table">
+        <thead>
+          <tr>
+            <th>Opponent</th>
+            <th>Their Growth %</th>
+            <th>Hits to Kill Them</th>
+            <th>Hits They Need</th>
+            <th>Verdict</th>
+          </tr>
+        </thead>
+        <tbody id="matchup-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

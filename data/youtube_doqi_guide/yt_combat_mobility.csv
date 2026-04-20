@@ -1,0 +1,9 @@
+Dinosaur,Trot_kmh,Sprint_kmh,Stamina_Duration_min,Stamina_Duration_With_Diets_min,Stamina_Regen_Sitting_min,Stamina_Regen_Standing_min,Stamina_Regen_Sitting_With_Diets_min,Stamina_Regen_Standing_With_Diets_min,Scent_Range_m,Turn_Radius_Note
+Ceratosaurus,17.8,42.2,2.383,2.75,3.25,5.167,2.667,4.5,1500,
+Allosaurus,18.0,38.9,1.833,,3.333,5.583,,,,Health regen (resting): 16.75 min
+Deinosuchus,7.1,18.0,0.25,,4.167,5.167,,200,,
+Triceratops,,23.4,,,,,,350,Wide turn radius when running; swim 10.8km/h fast-stamina 1.75min slow-stamina 2.50min; scent moving 175m
+Diabloceratops,16.2,36,1.5,1.717,3.25,5.167,2.833,,500,scent moving 300m
+Pteranodon,,28.4,1.083,1.267,4.083,5.167,3.55,4.5,,Ground sprint only; fly speed 108 km/h; swim fast 0.533 min (0.633 with diets); swim slow 4.5 min
+Troodon,18.9,45,3.333,3.917,2.833,5.167,2.467,4.5,400,scent moving 200m standing 400m; swim 17.3 km/h fast-stamina 1:10 (1:22 diets) slow-stamina 1:50 (2:09 diets); jump cost 6% stamina
+Tyrannosaurus,,29,,,2.333,2.833,,,"150 moving, 300 stat",

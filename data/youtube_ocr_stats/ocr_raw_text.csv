@@ -1,0 +1,28 @@
+dino,section,timestamp_s,text
+Ceratosaurus,Model & Stats,16,Weight: 1300 kg
+Ceratosaurus,Model & Stats,16,Bite force: 150
+Ceratosaurus,Model & Stats,16,Sprint speed: 40.2 km/h
+Ceratosaurus,Model & Stats,16,Hunger time: 60 min
+Ceratosaurus,Model & Stats,16,Thirst time: 60 min
+Ceratosaurus,Model & Stats,16,Growth time (base): 4:10 h
+Ceratosaurus,Bacterial Bite,144,Vomiting cancels all attacks and sprinting leaving you vulnerable
+Ceratosaurus,Bacterial Bite,144,Eating builds up bacteria
+Ceratosaurus,Bacterial Bite,144,Bacterial bite causes vomit sickness
+Ceratosaurus,Bleed Resistance,160,Naturally bleed resistant
+Ceratosaurus,Bleed Resistance,160,Bleed resistance scales with health meaning the less hp Cerato has the more susceptible it is to bleed
+Ceratosaurus,Hits to Kill,248,HERBIVORES: Diabloceratops: 20 | Dryosaurus: 1 (hs. 1) | Hypsilophodon: 1 (hs. 1) | Tenontosaurus: 11 (hs. 8) | Pachycephalosaurus: 4 (hs. 4) | Stegosaurus: 40 (hs. 20)
+Ceratosaurus,Hits to Kill,248,OMNIVORES: Beipiaosaurus: 1 (hs. 1) | Gallimimus: 3 (hs. 2)
+Ceratosaurus,Hits to Kill,248,HERBIVORES / CHARGED BITE: Diabloceratops: 9 | Dryosaurus: 1 (hs. 1) | Hypsilophodon: 1 (hs. 1) | Tenontosaurus: 5 (hs. 4) | Pachycephalosaurus: 2 (hs. 2) | Stegosaurus: 18 (hs. 9)
+Ceratosaurus,Hits to Kill,248,OMNIVORES / CHARGED BITE: Beipiaosaurus: 1 (hs. 1) | Gallimimus: 2 (hs. 1)
+Ceratosaurus,Running,320,Trot speed: 17.8 km/h
+Ceratosaurus,Running,320,Sprint speed: 42.2 km/h
+Ceratosaurus,Running,320,Stamina duration: 2:23 min (With diets up to 2:45 min)
+Ceratosaurus,Swimming,344,Cerato is the only terrestrial dino that can Alt-bite in water
+Ceratosaurus,Stamina Regen,368,Stamina regen (sitting): 3:15 min
+Ceratosaurus,Stamina Regen,368,Stamina regen (standing): 5:10 min
+Ceratosaurus,Stamina Regen,368,With diets up to: 2:40 min / 4:30 min
+Ceratosaurus,Scent Range,432,Scent range: 1500 m
+Ceratosaurus,Diet & Eating,480,Cerato can also eat bones and won't vomit from overeating
+Ceratosaurus,Nesting,560,Nest type: Debris
+Ceratosaurus,Nesting,560,Amount of eggs: Max 4
+Ceratosaurus,Nesting,560,Keep the eggs warm by adding more debris

@@ -1,0 +1,19 @@
+Dinosaur,Ability_Name,Special_Damage_N,Modifier_Effect,Mechanical_Threshold_Limit,Penalty_Condition
+Tyrannosaurus,Bone Crush,0,"100% Fracture (Bone Break)","Knockdown Target < 0.75x Rex Mass","Miss self-stun 1.0s, 5.0s Cooldown"
+Triceratops,Gore / Trample,0,"25+ Bleed/sec","100% Lethal Trample to Target < 500kg",High Stamina Drain
+Deinosuchus,Aquatic Lunge,500,"Drowning / Massive Bleed","Grab Target < 4000kg (Half Deino Mass)","Target stamina dictates time to drown"
+Stegosaurus,Directional Tail Swing,1200,"30 Bleed/tick","Headshot modifier x2.6 (3120 N)",Limited rear FOV tracking
+Maiasaura,Stance Switch / Stomp,110,"Instant Speed/Agility toggle",None,None
+Diabloceratops,Horn Spar,275,"Opponent Stamina set to 0% if won",Dynamic vs mass ratio,"Loser Stamina drops to 0%"
+Allosaurus,Grapple / Pin,0,"50 Dmg/sec + 50 Bleed/sec","Pin Target < 1400kg (Half Allo Mass)",Extreme Stamina Drain while latched
+Ceratosaurus,Bacteria Bite,350,"40% Rot per bite (Fully Charged)",100% Rot forces vomit stun (2-3s),Movement slowed by 10% while charging
+Tenontosaurus,Rear Kick / Slam,350,"Massive Blunt Trauma / Grounding","Slam AoE Grounding for targets < 500kg",Directional requirement (Kick strictly rear)
+Carnotaurus,High-Speed Charge,300,"Knockdown / Stun","Target < 1300kg (Knockdown)","Speed must be > 49.5 kmh, high stamina drain"
+Pachycephalosaurus,Dome Charge,350,"100% Fracture (Bone Break)",Target Stamina Regen penalised 50%,Miss leaves Pachy vulnerable to counter-attack
+Dilophosaurus,Venom Spit,0,"Stage 3 DoT / Hallucinations",Continuous HP drain until target rests,Spit impact damage is strictly 0
+Gallimimus,Dropkick / Vocals,150,"Stamina & Speed Buff (Herd)",Collision heavy vs < 200kg,Requires momentum
+Omniraptor,Pounce / Pin,32.5,"32.5 dmg/tick or Heavy Bleed Stacking",Pin occurs at Target 0 Stamina,Omniraptor Stamina Drain constant while latched
+Herrerasaurus,Drop Attack,0,"Fall Height Exponential Damage",Terminal velocity 1-shots up to 1500kg targets,Missing target at height results in self-death
+Dryosaurus,Dodge Roll,0,"Invincibility Frames (0.5s - 1.0s)",Consumes flat 15% Max Stamina per roll,Cannot attack during animation
+Troodon,Venom Pounce,15,"Stage 3 Extreme Percentage DoT",Requires coordinated pack vocalization,Base stats too low for raw combat
+Hypsilophodon,Acid Spit,0,"100% Blindness (10s)",Must strike Head Hitbox (2.6x zone),Impact damage is strictly 0

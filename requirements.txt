@@ -1,0 +1,22 @@
+# EvrimaDinoAnalyzer — Python dependencies
+# Install: pip install -r requirements.txt
+
+# --- Data / ETL ---
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0                        # fast HTML parser for BeautifulSoup
+
+# --- YouTube data extraction ---
+yt-dlp>=2024.1
+youtube-transcript-api>=0.6
+
+# --- Backend API ---
+fastapi>=0.111
+uvicorn[standard]>=0.29          # ASGI server
+
+# --- Scratch / OCR pipeline (_scratch/) ---
+opencv-python>=4.9
+pytesseract>=0.3
+

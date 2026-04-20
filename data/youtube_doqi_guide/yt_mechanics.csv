@@ -1,0 +1,25 @@
+Dinosaur,Mechanic_Name,Type,Trigger,Effect,Gameplay_Impact
+Ceratosaurus,Bacterial Bite,Active Ability,Eating builds up bacteria; fully-charged bite,Target vomits (2-3s stun); vomiting cancels all attacks and sprinting,Offensive pressure tool; forces target vulnerability window
+Ceratosaurus,Bleed Resistance,Passive,Always active; scales inversely with HP,Naturally bleed resistant; resistance decreases as HP falls,High HP = strong bleed resistance; low HP = normal bleed susceptibility
+Ceratosaurus,Aquatic Alt-Bite,Passive Unlock,In water,Only terrestrial dino that can use alt-bite while swimming,Unique combat advantage in aquatic environments
+Allosaurus,Pounce / Grapple,Active Ability,Alt + LMB directional attack,Grapple deals bleed and 50 damage/s per Allo; pins targets below pin weight threshold,Primary offensive mechanic; stacks with pack; extreme stamina drain while latched
+Allosaurus,Prime Elder,Lifecycle Stage,Reaches elder age (~87% growth peak),Weight 2600→3700 kg; Biteforce 175→200→140; Speed 38.9→39.2→35.6 km/h at old 100%,Stats increase then decline as Elder ages; peak performance at ~87%
+Deinosuchus,Lunge,Active Ability,Hold RMB near target up to 4000 kg,350 damage; grabs and drowns target; stamina cost 5% water / 15% land,Primary ambush tool from water
+Deinosuchus,Watersense,Active Ability,Hold Q,Detects surface movement on water,Reveals prey on water surface
+Deinosuchus,Diving,Unique Mechanic,Hold Ctrl to dive / Space to ascend,Fast 30.6 km/h slow 11.4 km/h; oxygen 10 min,Full underwater ambush positioning
+Triceratops,Primary Attack,Active Ability,LMB,600 damage; same damage applies when running,Standard attack
+Triceratops,Flip,Active Ability,Hold LMB,750 damage (600 w/ knockdown); stuns targets up to 1.5x Trike weight; knocks down targets up to 0.9x Trike weight,Primary offensive special; weight-gated stun and knockdown
+Triceratops,Sparring,Unique Mechanic,Alt attack mode,10 push attacks each with 30s cooldown; cooldown resets after attacking,Intraspecies combat
+Diabloceratops,Sprint Attack,Active Ability,Sprinting + LMB,150 damage + knockdown,Knockdown enables follow-up attacks
+Diabloceratops,Sparring,Unique Mechanic,Alt attack mode,10 push attacks each with 30s cooldown; cooldown resets after attacking,Intraspecies combat
+Pteranodon,Flight,Unique Mechanic,Always active (airborne),Primary locomotion at 108 km/h; only flying dino currently in dataset,Bypasses all ground-based threats; stamina 1:05 min duration
+Pteranodon,Take Off,Unique Mechanic,Running start required,Must build up ground speed before becoming airborne,Cannot take off from standstill; vulnerable on ground
+Pteranodon,Airbrake,Active Ability,Activated mid-flight,Rapidly reduces airspeed to allow controlled landing or direction change,Essential for landing without overshooting; combat repositioning
+Pteranodon,Latching,Active Ability,Approach surface while flying,Can latch onto trees and vertical surfaces; hangs stationary,Ambush perch; passive rest position to conserve stamina
+Pteranodon,Skimming,Unique Mechanic,Fly low over water surface,Snatches fish from water while flying; primary feeding method,Eating without landing; safer foraging than ground feeding
+Troodon,Pounce,Active Ability,Alt attack,35 base damage; applies venom on target; stages 1/2/3 deal 35/50/75 venom damage,Primary offensive tool; venom stacks with successive pounces; envenomated targets take significantly more hits to kill
+Troodon,Venom,Passive,Applied via Pounce,"3 stages: Stage 1 = 35 dmg, Stage 2 = 50 dmg, Stage 3 = 75 dmg",Reduces effective HTK dramatically at higher stages; Hypsilophodon and Beipiaosaurus die before reaching full envenomation
+Troodon,Primary Bite,Active Ability,LMB,15 damage,Low damage; pounce is primary DPS tool
+Troodon,Directional Attack,Active Ability,Directional + LMB,18 damage,Slightly higher than primary bite
+Tyrannosaurus,Crush,Active Ability,,Missing prevents Rex from moving for 1s. 5s cooldown,
+Tyrannosaurus,Fractures,Unique Mechanic,,"Fractures can combine, combining defects",

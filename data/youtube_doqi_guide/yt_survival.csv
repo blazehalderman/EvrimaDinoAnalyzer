@@ -1,0 +1,9 @@
+Dinosaur,Nest_Type,Max_Eggs,Nest_Mechanic,Can_Eat_Bones,Vomits_From_Overeating,Survival_Notes
+Ceratosaurus,Debris,4,Keep eggs warm by adding more debris,Yes,No,
+Allosaurus,Debris,4,,,,Preferred food: Stegosaurus
+Deinosuchus,Debris,5,,,,Preferred prey: Tenontosaurus / Pachycephalosaurus / Ceratosaurus
+Triceratops,Mound,6,,,,
+Diabloceratops,Mound,4,,,,
+Pteranodon,Debris,,,,,Max eggs not visible in nesting frame; skims water to feed (no ground feeding required)
+Troodon,Mound,,,,,"Diet: Boar, Pachycephalosaurus, Tenontosaurus (preferred), Chicken, Rabbit, Compsognathus"
+Tyrannosaurus,Debris,5,,,,
