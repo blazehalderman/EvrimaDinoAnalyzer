@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from api.routes import dinos, matchup, guide
-import os
 
 app = FastAPI(
     title="EvrimaDinoAnalyzer API",
@@ -24,6 +23,5 @@ app.include_router(dinos.router, prefix="/api/dinos", tags=["Dinosaurs"])
 app.include_router(matchup.router, prefix="/analyze", tags=["Matchups"])
 app.include_router(guide.router, prefix="/guide", tags=["Guides"])
 
-# Serve frontend static files
-frontend_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
-app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+# Serve frontend static files — relative to CWD (project root on Render)
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
